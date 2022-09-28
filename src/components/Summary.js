@@ -4,6 +4,17 @@ import Pahlovi from "../images/Pahlovi.png";
 const Summary = ({ card }) => {
     const breaks = [10, 20, 30, 40, 50];
 
+    const [perBreak, setPerBreak] = useState("00");
+
+    let time = 0;
+    for (const activity of card) {
+        time += activity.time;
+    }
+
+    const handelToster = () => {
+        console.log("CLicked");
+    };
+
     return (
         <div className="w-full sm:w-[220px] xl:w-[290px] xxl:w-[360px] h-auto fixed sm:sticky sm:top-0 bottom-0 left-0 bg-accent px-5 pt-8 pb-10 rounded-lg flex flex-col gap-5">
             <div className="flex items-center gap-3">
@@ -35,7 +46,11 @@ const Summary = ({ card }) => {
                 <p className="mb-2">Add a Break</p>
                 <div className="flex justify-evenly flex-wrap gap-2">
                     {breaks.map((perBreak, index) => (
-                        <h4 key={index} className="bg-light p-2 rounded-full cursor-pointer">
+                        <h4
+                            key={index}
+                            onClick={() => setPerBreak(perBreak)}
+                            className="bg-light p-2 rounded-full cursor-pointer"
+                        >
                             {perBreak}s
                         </h4>
                     ))}

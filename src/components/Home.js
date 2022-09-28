@@ -12,6 +12,12 @@ const Home = () => {
             .then((data) => setActivities(data.activities));
     }, []);
 
+    const [card, setCard] = useState([]);
+    const addActivityToSummary = (id) => {
+        const newCard = [...card, id];
+        setCard(newCard);
+    };
+
     return (
         <div className="my-container section-gap">
             <h1 className="heading-text">Gym 360 | No Pain No Gains</h1>
