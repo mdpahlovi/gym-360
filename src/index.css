@@ -7,7 +7,7 @@
         @apply container mx-auto px-6;
     }
     .section-gap {
-        @apply p-6 sm:p-10 lg:p-16;
+        @apply py-6 sm:py-10 lg:py-16;
     }
     .heading-text {
         @apply text-3xl lg:text-4xl 2xl:text-5xl font-bold;

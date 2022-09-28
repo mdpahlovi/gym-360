@@ -1,6 +1,7 @@
 {
     "activities": [
         {
+            "id": "A001",
             "name": "Cardio",
             "img": "https://thumbs.gfycat.com/DampPerkyHairstreakbutterfly-size_restricted.gif",
             "details": "These workouts include jogging, bicycling, power walking, swimming, and aerobics.",
@@ -8,6 +9,7 @@
             "time": 60
         },
         {
+            "id": "A002",
             "name": "Jump rope",
             "img": "https://thumbs.gfycat.com/SelfishSecondEquestrian-size_restricted.gif",
             "details": "It improves your coordination and cognitive function and elevates your heart rate.",
@@ -15,6 +17,7 @@
             "time": 10
         },
         {
+            "id": "A003",
             "name": "Pushups",
             "img": "https://thumbs.gfycat.com/MajesticEvergreenBeetle-size_restricted.gif",
             "details": "It is for stabilizing the core, building upper body strength, & increasing muscle mass.",
@@ -22,14 +25,15 @@
             "time": 30
         },
         {
+            "id": "A004",
             "name": "Lunges",
             "img": "https://thumbs.gfycat.com/ImpossibleVengefulBass-size_restricted.gif",
             "details": "you can do them forward, backward, weighted and unweighted.",
             "doIt": "Complete 3 set of 8 to 12 lunges per leg.",
             "time": 40
         },
-
         {
+            "id": "A005",
             "name": "Burpees",
             "img": "https://thumbs.gfycat.com/ConcreteAcademicDouglasfirbarkbeetle-size_restricted.gif",
             "details": "It is combine squats, jumps, and pushups. It burn your fat from overall body,",
@@ -37,6 +41,7 @@
             "time": 20
         },
         {
+            "id": "A006",
             "name": "Step-ups",
             "img": "https://thumbs.gfycat.com/BewitchedDefiantIndianhare-size_restricted.gif",
             "details": "It help to strengthen the legs while stabilizing your core and lower back muscles.",
