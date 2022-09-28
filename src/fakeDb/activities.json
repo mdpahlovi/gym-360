@@ -1,0 +1,47 @@
+{
+    "activities": [
+        {
+            "name": "Cardio",
+            "img": "https://thumbs.gfycat.com/DampPerkyHairstreakbutterfly-size_restricted.gif",
+            "details": "These workouts include jogging, bicycling, power walking, swimming, and aerobics.",
+            "doIt": "Aim for 60 minutes of low-intensity cardio deaily",
+            "time": 60
+        },
+        {
+            "name": "Jump rope",
+            "img": "https://thumbs.gfycat.com/SelfishSecondEquestrian-size_restricted.gif",
+            "details": "It improves your coordination and cognitive function and elevates your heart rate.",
+            "doIt": "Complete 3 sets of jump continuously for 1 1/2 minutes.",
+            "time": 10
+        },
+        {
+            "name": "Pushups",
+            "img": "https://thumbs.gfycat.com/MajesticEvergreenBeetle-size_restricted.gif",
+            "details": "It is for stabilizing the core, building upper body strength, & increasing muscle mass.",
+            "doIt": "Complete with 3 sets of 10 reps.",
+            "time": 30
+        },
+        {
+            "name": "Lunges",
+            "img": "https://thumbs.gfycat.com/ImpossibleVengefulBass-size_restricted.gif",
+            "details": "you can do them forward, backward, weighted and unweighted.",
+            "doIt": "Complete 3 set of 8 to 12 lunges per leg.",
+            "time": 40
+        },
+
+        {
+            "name": "Burpees",
+            "img": "https://thumbs.gfycat.com/ConcreteAcademicDouglasfirbarkbeetle-size_restricted.gif",
+            "details": "It is combine squats, jumps, and pushups. It burn your fat from overall body,",
+            "doIt": "Do 10 reps in 30 seconds. Repeat for 5 minutes.",
+            "time": 20
+        },
+        {
+            "name": "Step-ups",
+            "img": "https://thumbs.gfycat.com/BewitchedDefiantIndianhare-size_restricted.gif",
+            "details": "It help to strengthen the legs while stabilizing your core and lower back muscles.",
+            "doIt": "Complete 5 sets of 5 to 10 reps per side.",
+            "time": 30
+        }
+    ]
+}
