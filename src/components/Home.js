@@ -3,6 +3,7 @@ import Activity from "./Activity";
 import Summary from "./Summary";
 
 const Home = () => {
+    // Load Data
     const [activities, setActivities] = useState([]);
     useEffect(() => {
         const url = "activities.json";
@@ -10,12 +11,11 @@ const Home = () => {
             .then((res) => res.json())
             .then((data) => setActivities(data.activities));
     }, []);
-    const addActivityToSummary = (id) => {
-        console.log(id);
-    };
+
     return (
         <div className="my-container section-gap">
             <h1 className="heading-text">Gym 360 | No Pain No Gains</h1>
+            <h3>Select today’s exercise</h3>
             <div className="mt-3 flex flex-col-reverse sm:flex-row gap-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {activities.map((activity) => (
@@ -25,6 +25,9 @@ const Home = () => {
                             addActivityToSummary={addActivityToSummary}
                         ></Activity>
                     ))}
+                </div>
+                <div className="hidden sm:block">
+                    <Summary card={card}></Summary>
                 </div>
             </div>
         </div>
