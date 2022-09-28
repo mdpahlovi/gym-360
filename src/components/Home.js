@@ -12,6 +12,7 @@ const Home = () => {
             .then((data) => setActivities(data.activities));
     }, []);
 
+    // Set Selected Card to send to summary
     const [card, setCard] = useState([]);
     const addActivityToSummary = (id) => {
         const newCard = [...card, id];

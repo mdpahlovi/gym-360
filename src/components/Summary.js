@@ -1,16 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Pahlovi from "../images/Pahlovi.png";
 
 const Summary = ({ card }) => {
     const breaks = [10, 20, 30, 40, 50];
 
-    const [perBreak, setPerBreak] = useState("00");
-
+    // Set & Update Time
     let time = 0;
     for (const activity of card) {
         time += activity.time;
     }
 
+    // Handel localStorage
+    const [perBreak, setPerBreak] = useState("00");
+    useEffect(() => {
+        setPerBreak(localStorage.getItem("break"));
+    }, []);
+    const handelbreak = (data) => {
+        setPerBreak(data);
+        localStorage.setItem("break", data);
+    };
+
+    // Show Toster
     const handelToster = () => {
         console.log("CLicked");
     };
@@ -48,7 +58,7 @@ const Summary = ({ card }) => {
                     {breaks.map((perBreak, index) => (
                         <h4
                             key={index}
-                            onClick={() => setPerBreak(perBreak)}
+                            onClick={() => handelbreak(perBreak)}
                             className="bg-light p-2 rounded-full cursor-pointer"
                         >
                             {perBreak}s
