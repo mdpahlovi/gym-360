@@ -1,4 +1,5 @@
 import React from "react";
+import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 const Activity = ({ activity, addActivityToSummary }) => {
     const { img, name, details, doIt, time } = activity;
@@ -12,10 +13,10 @@ const Activity = ({ activity, addActivityToSummary }) => {
                 <h3 className="text-lg font-bold">Time Required: {time} min</h3>
             </div>
             <button
-                className="flex justify-center btn bg-accent rounded-t-none"
+                className="flex justify-center items-center gap-2 btn bg-accent rounded-t-none"
                 onClick={() => addActivityToSummary(activity)}
             >
-                Add To Card
+                Add To Summary <BsFillArrowRightCircleFill></BsFillArrowRightCircleFill>
             </button>
         </div>
     );

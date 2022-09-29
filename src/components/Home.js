@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Activity from "./Activity";
 import Summary from "./Summary";
+import { BiDumbbell } from "react-icons/bi";
 
 const Home = () => {
     // Load Data
@@ -21,7 +22,9 @@ const Home = () => {
 
     return (
         <div className="my-container section-gap">
-            <h1 className="heading-text">Gym 360 | No Pain No Gains</h1>
+            <h1 className="heading-text flex items-center gap-2 mb-2">
+                <BiDumbbell></BiDumbbell>Gym 360 | No Pain No Gains
+            </h1>
             <h3>Select today’s exercise</h3>
             <div className="mt-3 flex flex-col-reverse sm:flex-row gap-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -33,7 +36,7 @@ const Home = () => {
                         ></Activity>
                     ))}
                 </div>
-                <div className="hidden sm:block">
+                <div>
                     <Summary card={card}></Summary>
                 </div>
             </div>

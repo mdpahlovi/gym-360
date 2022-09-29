@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Pahlovi from "../images/Pahlovi.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { ImLocation2 } from "react-icons/im";
+import { MdCloudDone } from "react-icons/md";
 
 const Summary = ({ card }) => {
     const breaks = [10, 20, 30, 40, 50];
@@ -36,12 +38,14 @@ const Summary = ({ card }) => {
     };
 
     return (
-        <div className="w-full sm:w-[220px] xl:w-[290px] xxl:w-[360px] h-auto fixed sm:sticky sm:top-0 bottom-0 left-0 bg-accent px-5 pt-8 pb-10 rounded-lg flex flex-col gap-5">
+        <div className="w-full sm:w-[235px] xl:w-[290px] xxl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
             <div className="flex items-center gap-3">
                 <img className="w-[20%] border rounded-2xl" src={Pahlovi} alt="" />
                 <div>
                     <h3 className="font-semibold">MD Pahlovi</h3>
-                    <h3>Barisal, Bangladesh</h3>
+                    <h3 className="flex items-center gap-1">
+                        <ImLocation2></ImLocation2> Bhola, Bangladesh
+                    </h3>
                 </div>
             </div>
             <div className="flex justify-between">
@@ -64,12 +68,12 @@ const Summary = ({ card }) => {
             </div>
             <div>
                 <p className="mb-2">Add a Break</p>
-                <div className="flex justify-evenly flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2">
                     {breaks.map((perBreak, index) => (
                         <h4
                             key={index}
                             onClick={() => handelbreak(perBreak)}
-                            className="bg-light p-2 rounded-full cursor-pointer"
+                            className="bg-light p-2 rounded-lg cursor-pointer"
                         >
                             {perBreak}s
                         </h4>
@@ -85,8 +89,8 @@ const Summary = ({ card }) => {
                     Break Time : <span>{perBreak}</span>
                 </h3>
             </div>
-            <button className="btn bg-light" onClick={handelToast}>
-                Activities Completed
+            <button className="flex justify-center items-center gap-2 btn bg-light" onClick={handelToast}>
+                Activities Completed <MdCloudDone></MdCloudDone>
             </button>
             <ToastContainer
                 position="bottom-right"

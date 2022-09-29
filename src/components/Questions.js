@@ -2,7 +2,7 @@ import React from "react";
 
 const Questions = () => {
     return (
-        <div className="my-container max-w-3xl section-gap flex flex-col gap-5">
+        <div className="my-container max-w-3xl section-gap flex flex-col gap-3 md:gap-5">
             <h1 className="text-center mb-3 heading-text">Blog Questions</h1>
             <div className="border rounded-2xl p-5">
                 <h3 className="pb-1 text-xl font-semibold mb-1 border-b">How does react work ?</h3>
