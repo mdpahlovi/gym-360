@@ -38,7 +38,7 @@ const Summary = ({ card }) => {
     };
 
     return (
-        <div className="w-full sm:w-[235px] xl:w-[290px] xxl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
+        <div className="w-full sm:w-[285px] xxl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
             <div className="flex items-center gap-3">
                 <img className="w-[20%] border rounded-2xl" src={Pahlovi} alt="" />
                 <div>
