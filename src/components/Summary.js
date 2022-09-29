@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Pahlovi from "../images/Pahlovi.png";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Summary = ({ card }) => {
     const breaks = [10, 20, 30, 40, 50];
@@ -21,8 +23,16 @@ const Summary = ({ card }) => {
     };
 
     // Show Toster
-    const handelToster = () => {
-        console.log("CLicked");
+    const handelToast = () => {
+        toast.success("Wow ! You completed your todays task", {
+            position: "bottom-right",
+            autoClose: 3000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+        });
     };
 
     return (
@@ -75,9 +85,20 @@ const Summary = ({ card }) => {
                     Break Time : <span>{perBreak}</span>
                 </h3>
             </div>
-            <button className="btn bg-light" onClick={handelToster}>
+            <button className="btn bg-light" onClick={handelToast}>
                 Activities Completed
             </button>
+            <ToastContainer
+                position="bottom-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+            />
         </div>
     );
 };
