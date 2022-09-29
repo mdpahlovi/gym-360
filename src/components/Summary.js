@@ -38,7 +38,7 @@ const Summary = ({ card }) => {
     };
 
     return (
-        <div className="w-full sm:w-[285px] xxl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
+        <div className="w-full sm:w-[285px] 2xl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
             <div className="flex items-center gap-3">
                 <img className="w-[20%] border rounded-2xl" src={Pahlovi} alt="" />
                 <div>
@@ -51,12 +51,12 @@ const Summary = ({ card }) => {
             <div className="flex justify-between">
                 <div>
                     <h3 className="text-2xl font-semibold">
-                        75 <span className="text-sm">kg</span>
+                        85 <span className="text-sm">kg</span>
                     </h3>
                     <p>Weight</p>
                 </div>
                 <div>
-                    <h3 className="text-2xl font-semibold">6.5</h3>
+                    <h3 className="text-2xl font-semibold">5.85</h3>
                     <p>Height</p>
                 </div>
                 <div>
@@ -67,13 +67,13 @@ const Summary = ({ card }) => {
                 </div>
             </div>
             <div>
-                <p className="mb-2">Add a Break</p>
-                <div className="flex flex-wrap gap-2">
+                <p className="mb-2 text-lg text-center font-semibold">Add a Break</p>
+                <div className="flex flex-wrap justify-center gap-2">
                     {breaks.map((perBreak, index) => (
                         <h4
                             key={index}
                             onClick={() => handelbreak(perBreak)}
-                            className="bg-light p-2 rounded-lg cursor-pointer"
+                            className="bg-light hover:bg-lightGray duration-300 p-2 rounded-lg cursor-pointer"
                         >
                             {perBreak}s
                         </h4>
@@ -83,13 +83,16 @@ const Summary = ({ card }) => {
             <div className="flex flex-col gap-2">
                 <h3 className="text-lg text-center font-semibold">Exercise Details</h3>
                 <h3 className="flex justify-between">
-                    Exercise Time : <span>{time}</span>
+                    Exercise Time : <span>{time} min</span>
                 </h3>
                 <h3 className="flex justify-between">
-                    Break Time : <span>{perBreak}</span>
+                    Break Time : <span>{perBreak} s</span>
                 </h3>
             </div>
-            <button className="flex justify-center items-center gap-2 btn bg-light" onClick={handelToast}>
+            <button
+                className="flex justify-center items-center gap-2 btn bg-light hover:bg-lightGray duration-300"
+                onClick={handelToast}
+            >
                 Activities Completed <MdCloudDone></MdCloudDone>
             </button>
             <ToastContainer
