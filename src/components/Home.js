@@ -22,7 +22,7 @@ const Home = () => {
 
     return (
         <div className="my-container section-gap flex flex-col gap-2">
-            <h1 className="heading-text flex items-center gap-">
+            <h1 className="heading-text flex sm:items-center gap-1">
                 <BiDumbbell></BiDumbbell>Gym 360 | No Pain No Gains
             </h1>
             <h1>

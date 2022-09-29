@@ -38,7 +38,7 @@ const Summary = ({ card }) => {
     };
 
     return (
-        <div className="w-full sm:w-[285px] 2xl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
+        <div className="w-full sm:w-[280px] md:w-[300px] 2xl:w-[360px] h-auto sticky sm:top-0 bottom-0 left-0 bg-accent px-5 py-8 rounded-lg flex flex-col gap-5">
             <div className="flex items-center gap-3">
                 <img className="w-[20%] border rounded-2xl" src={Pahlovi} alt="" />
                 <div>
@@ -68,7 +68,7 @@ const Summary = ({ card }) => {
             </div>
             <div>
                 <p className="mb-2 text-lg text-center font-semibold">Add a Break</p>
-                <div className="flex flex-wrap justify-center gap-2">
+                <div className="flex flex-wrap justify-between">
                     {breaks.map((perBreak, index) => (
                         <h4
                             key={index}
