@@ -15,9 +15,12 @@ const Summary = ({ card }) => {
     }
 
     // Handel localStorage
-    const [perBreak, setPerBreak] = useState("00");
+    const [perBreak, setPerBreak] = useState();
     useEffect(() => {
-        setPerBreak(localStorage.getItem("break"));
+        const getBreak = localStorage.getItem("break");
+        if (getBreak) {
+            setPerBreak(getBreak);
+        } else setPerBreak(0);
     }, []);
     const handelbreak = (data) => {
         setPerBreak(data);
